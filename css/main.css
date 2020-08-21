@@ -34,11 +34,9 @@ footer {
 }
 
 ul.posts { 
-    margin: 50px auto 90px; 
     font-size: 2.2em;
 }
 
 ul.posts li {
-    list-style: none;
     font-size: 2.7em;
 }
