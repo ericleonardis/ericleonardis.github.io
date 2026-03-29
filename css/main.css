@@ -133,7 +133,7 @@ nav {
 
 .hero .subtitle {
   font-size: 17px;
-  color: #666;
+  color: #444;
   max-width: 620px;
   line-height: 1.6;
 }
@@ -152,7 +152,7 @@ nav {
 
 .page-header .subtitle {
   font-size: 16px;
-  color: #666;
+  color: #444;
   max-width: 560px;
   line-height: 1.6;
 }
@@ -204,22 +204,22 @@ nav {
 }
 
 .card h3 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
 .card .authors {
-  font-size: 13px;
-  color: #888;
-  font-weight: 300;
+  font-size: 15px;
+  color: #555;
+  font-weight: 400;
   margin-bottom: 8px;
 }
 
 .card p {
-  font-size: 14px;
-  color: #666;
-  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -256,27 +256,29 @@ nav {
 }
 
 .featured-card h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .featured-card .authors {
-  font-size: 13px;
-  color: #888;
+  font-size: 15px;
+  color: #555;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 .featured-card p {
-  font-size: 15px;
-  color: #666;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
   line-height: 1.6;
   margin-bottom: 12px;
 }
 
 .featured-card .meta {
-  font-size: 11px;
-  color: #999;
+  font-size: 13px;
+  color: #777;
 }
 
 /* 11. Document Cards
@@ -323,7 +325,7 @@ nav {
 }
 
 .pub-title {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   margin-bottom: 4px;
   transition: color 0.15s;
@@ -334,15 +336,15 @@ nav {
 }
 
 .pub-authors {
-  font-size: 13px;
-  color: #888;
+  font-size: 14px;
+  color: #555;
   font-weight: 300;
   margin-bottom: 4px;
 }
 
 .pub-venue {
-  font-size: 13px;
-  color: #999;
+  font-size: 14px;
+  color: #666;
 }
 
 /* 13. Flyer Grid
