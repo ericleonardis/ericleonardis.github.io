@@ -52,7 +52,7 @@ nav {
 
 .nav-logo {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #1a1a1a;
@@ -68,13 +68,16 @@ nav {
   font-size: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #999;
-  transition: color 0.15s;
+  color: #1a1a1a;
+  transition: font-weight 0.15s;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
 .nav-links a.active {
-  color: #1a1a1a;
+  font-weight: 700;
 }
 
 .nav-toggle {
