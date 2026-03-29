@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music — Eric Leonardis</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="/">Eric Leonardis, PhD</a>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/resume.html">Resume</a></li>
+      <li><a href="/cv.html">CV</a></li>
+      <li><a href="/scicomm.html">Sci Comm</a></li>
+      <li><a href="/film.html">Film</a></li>
+      <li><a href="/music.html" class="active">Music</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrap">
+    <div class="page-header" style="display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <h1>Music</h1>
+        <p class="subtitle">DJ sets, events, and mixes.</p>
+      </div>
+      <a href="https://ra.co/dj/ericleonardis" target="_blank" rel="noopener" style="font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#2563eb; font-weight:500;">Open on Resident Advisor &rarr;</a>
+    </div>
+  </div>
+
+  <iframe src="https://ra.co/dj/ericleonardis" style="width:100%; height:calc(100vh - 140px); border:none;"></iframe>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
