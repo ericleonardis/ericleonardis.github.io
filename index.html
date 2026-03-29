@@ -1,215 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Eric J. Leonardis, MS, PhD</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Leonardis, PhD</title>
+  <link rel="stylesheet" href="/css/main.css">
 </head>
-
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/CV/ResumeEricLeonardis.pdf">Resume</a></li>
-            <li><a href="/CV/EricLeonardisCV.pdf">CV</a></li>
-            <li><a href="https://ra.co/dj/ericleonardis/biography">Music</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <div class="blurb"></div>
+  <nav>
+    <a class="nav-logo" href="/">Eric Leonardis</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/research.html">Research</a></li>
+      <li><a href="/CV/ResumeEricLeonardis.pdf">Resume</a></li>
+      <li><a href="/CV/EricLeonardisCV.pdf">CV</a></li>
+      <li><a href="/scicomm.html">Sci Comm</a></li>
+      <li><a href="/film.html">Film</a></li>
+      <li><a href="/music.html">Music</a></li>
+    </ul>
+  </nav>
 
-        <h1>Eric Leonardis, MS, PhD</h1>
+  <div class="page-wrap">
 
-        <h2 style="font-size: 1.8rem;">
-            Postdoctoral Fellow – Talmo Pereira Lab and Eiman Azim Lab – Salk Institute for Biological Studies
-        </h2>
+    <!-- Hero -->
+    <section class="hero">
+      <h1><strong>Eric Leonardis</strong>, PhD</h1>
+      <p class="subtitle">Postdoctoral fellow in systems neuroscience at the Salk Institute for Biological Studies. I build computational models of biological motor control, speak about AI and film, and serve as a scientific advisor for the National Academy of Sciences Science &amp; Entertainment Exchange.</p>
+    </section>
 
-        <h2 style="font-size: 1.8rem;">
-            PhD – Andrea Chiba Lab – Cognitive Science – UC San Diego
-        </h2>
+    <hr class="divider">
 
-        <h2 style="font-size: 1.8rem;">
-            Systems Neuroscience / Reinforcement Learning / Computational Ethology
-        </h2>
+    <!-- Research -->
+    <section class="content-section">
+      <p class="section-label">Research</p>
+      <div class="card-grid">
 
-        <h2 style="font-size: 1.8rem;">
-            Scientific Advisor for Film
-        </h2>
+        <a class="card" href="/research.html">
+          <span class="tag tag-research">NeurIPS 2025</span>
+          <div class="card-img">
+            <img src="/mousearm.png" alt="Mouse Forelimb Imitation Learning">
+          </div>
+          <h3>Massively Parallel Imitation Learning of Mouse Forelimb Musculoskeletal Reaching Dynamics</h3>
+          <div class="authors">Leonardis, E. J., Bhagat, S., Lobato-Rios, D., Pereira, T. D., Azim, E.</div>
+          <p>We utilize MIMIC-MJX, which uses JAX and MuJoCo-MJX to achieve speeds of more than 1 million steps per second through the physics and RL environment, enabling massively parallel imitation learning of mouse forelimb musculoskeletal dynamics.</p>
+        </a>
 
-        <img src="images/SalkImage_Leonardis.jpg"
-             alt="Eric Leonardis"
-             style="width:320px;height:320px; float:right; margin-left:20px;">
+        <a class="card" href="/research.html">
+          <span class="tag tag-research">Preprint</span>
+          <div class="card-img">
+            <img src="/mimic.jpg" alt="MIMIC-MJX Framework">
+          </div>
+          <h3>MIMIC-MJX: Neuromechanical Emulation of Animal Behavior</h3>
+          <div class="authors">Lobato-Rios, D., Leonardis, E. J., et al.</div>
+          <p>A neuromechanical modeling framework integrating stac-mjx and track-mjx for data-driven control of biomechanical bodies in physics simulation, enabling high-speed imitation learning from motion capture data.</p>
+        </a>
 
-        <p>
-            I research human and animal behavior using methods from systems and computational neuroscience.
-            I am currently working with Talmo Pereira and Eiman Azim on deep reinforcement learning,
-            high-fidelity musculoskeletal simulation, and 3D pose tracking.
-            My research focuses on building interpretable NeuroAI systems by integrating biologically realistic biomechanics
-            with large-scale imitation learning to study the neural computations underlying motor control.
-        </p>
+      </div>
+    </section>
 
-        <p>
-            My current postdoc project uses 3D tracking, reinforcement learning, and imitation learning to model rodent
-            forelimb movement. Previously, I worked with Professor Andrea Chiba and Dr. Laleh Quinn on neuroscience experiments involving social behavior
-            toward other conspecifics and interaction with robots. I serve as scientific advisor for the National Academy of Sciences Science and Entertainment Exchange to
-            evaluate the science in film scripts.
-        </p>
+    <hr class="divider">
 
-        <!-- NeurIPS paper -->
+    <!-- Documents -->
+    <section class="content-section">
+      <p class="section-label">Documents</p>
+      <div class="doc-cards">
 
-        <h2>New NeurIPS Workshop Paper: High Speeed Imitation Learning for Mouse Forelimb Control.</h2>
-        
-        <p>
-            Our paper <i>“Massively Parallel Imitation Learning of Mouse Forelimb Musculoskeletal Reaching Dynamics”</i>
-            has been accepted to the
-            <b>NeurIPS 2025 – Data on the Brain & Mind: Concrete Applications of AI to Neuroscience and Cognitive Science Workshop</b>,
-            taking place December 7 in San Diego, CA.  We utilize MIMIC-MJX which uses JAX and Mujoco-MJX to elicit speeds of more than 1 million steps per second through the physics and RL environment. 
-        </p>
+        <a class="doc-card" href="/CV/ResumeEricLeonardis.pdf" target="_blank">
+          <span class="doc-icon">PDF</span>
+          <span class="doc-title">Resume</span>
+          <span class="doc-sub">1 page overview</span>
+        </a>
 
-        <ul>
-            <li>
-                <a href="https://arxiv.org/pdf/2511.21848v1">
-                    Massively Parallel Imitation Learning of Mouse Forelimb Musculoskeletal Reaching Dynamics (arXiv 2025)
-                </a>
-            </li>
-        </ul>
+        <a class="doc-card" href="/CV/EricLeonardisCV.pdf" target="_blank">
+          <span class="doc-icon">PDF</span>
+          <span class="doc-title">Curriculum Vitae</span>
+          <span class="doc-sub">Full academic record</span>
+        </a>
 
-        <img 
-          src="https://raw.githubusercontent.com/ericleonardis/ericleonardis.github.io/master/mousearm.png" 
-          alt="Mouse Forelimb Imitation Learning – NeurIPS 2025" 
-          style="width:1000px; max-width:100%; margin-top:20px; display:block;">
+      </div>
+    </section>
 
+    <hr class="divider">
 
-        <!-- MIMIC-MJX -->
+    <!-- Science Communication -->
+    <section class="content-section">
+      <p class="section-label">Science Communication</p>
+      <div class="card-grid">
 
-         <h2>"MIMIC-MJX: Neuromechanical Emulation of Animal Behavior" High Speed Imitation Learning From Mocap Data</h2>
+        <a class="card" href="/scicomm.html">
+          <span class="tag tag-scicomm">Talk</span>
+          <h3>Body Horror and the Brain</h3>
+          <p>A talk given with the Neurohumanities Network &amp; Harvard Medical School exploring the neuroscience of body horror, disgust, and the insular cortex through the lens of film and media.</p>
+        </a>
 
-        <p>
-            A new collaborative preprint on our neuromechanical modeling framework, integrating stac-mjx and track-mjx
-            for data-driven control of biomechanical bodies in physics simulation.
-        </p>
+        <a class="card" href="https://www.wired.com/story/game-horror-sounds-psychology-dead-space-remake-scorn/" target="_blank" rel="noopener">
+          <span class="tag tag-scicomm">Press</span>
+          <h3>WIRED — What Creepy Video Game Sounds Do to Your Brain</h3>
+          <p>An interview discussing the neuroscience of body horror and the insular cortex, prompted by the HR Giger–inspired survival horror game <em>Scorn</em> and its relationship to embodied cognition and the neuroscience of disgust.</p>
+        </a>
 
-        <ul>
-            <li>
-                <a href="https://arxiv.org/abs/2511.20532">
-                    MIMIC-MJX: Neuromechanical Emulation of Animal Behavior (arXiv 2025)
-                </a>
-            </li>
-        </ul>
+      </div>
+    </section>
 
-        <img 
-          src="https://raw.githubusercontent.com/ericleonardis/ericleonardis.github.io/master/mimic.jpg" 
-          alt="MIMIC-MJX Neuromechanical Framework" 
-          style="width:1000px; max-width:100%; margin-top:20px; display:block;">
+    <hr class="divider">
 
-        <!-- Comic Con -->
-        
-        <h2>Comic-Con International — “Evolution of AI in Film and In Reality”</h2>
-            <p>
-                I spoke at Comic-Con International on the <em>“Evolution of AI in Film and In Reality”</em> panel,
-                sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI
-                influences storytelling, scientific communication, and ethics. The room was packed, and I’m grateful
-                to Andrea Decker for organizing the event.
-            </p>
-        
-            <img
-                src="https://raw.githubusercontent.com/ericleonardis/ericleonardis.github.io/master/comicconpic.jpg"
-                alt="Eric Leonardis Comic-Con Panel Photo"
-                style="width:250px;">
-        
-        <!-- Lecture -->
-        <p>
-            I recently gave a talk "Body Horror and the Brain" with the Neurohumanities Network and Harvard Medical School.
-            Check out my lecture below:
-        </p>
+    <!-- Film -->
+    <section class="content-section">
+      <p class="section-label">Film</p>
+      <a class="featured-card" href="/film.html">
+        <div class="featured-img">
+          <img src="/comicconpic.jpg" alt="Eric Leonardis at Comic-Con">
+        </div>
+        <span class="tag tag-film">Comic-Con International</span>
+        <h3>Evolution of AI in Film and In Reality</h3>
+        <p>I spoke at Comic-Con International on the "Evolution of AI in Film and In Reality" panel, sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI influences storytelling, scientific communication, and ethics.</p>
+      </a>
+    </section>
 
-        <ul>
-            <li>
-                <a href="https://youtu.be/K9SOa6mo79Q?si=EUJoXRbPZSd_FCrT">
-                    Leonardis, E. (2024) Body Horror and the Brain. Neurohumanities Network Event.
-                </a>
-            </li>
-        </ul>
+  </div><!-- /.page-wrap -->
 
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/K9SOa6mo79Q?si=6b4XGmXhxNlMYpRr"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen>
-        </iframe>
-
-        <!-- WIRED -->
-        <p>
-            I was interviewed in WIRED about body horror and insular cortex. We discussed an HR Giger–inspired
-            survival body-horror video game <i>Scorn</i> and its relationship to embodied cognition and the neuroscience of disgust:
-        </p>
-
-        <ul>
-            <li>
-                <a href="https://www.wired.com/story/game-horror-sounds-psychology-dead-space-remake-scorn/">
-                    Farokhmanesh, M. (2023). What Creepy Video Game Sounds Do to Your Brain. WIRED.
-                </a>
-            </li>
-        </ul>
-
-        <!-- Neurorobotics -->
-        <p>Check out our paper about rodent behavioral and neural responses to robotic agents:</p>
-
-        <ul>
-            <li>
-                <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2022.897603/full">
-                    Leonardis, E. J. et al. (2022). Interactive Neurorobotics. Frontiers in Psychology.
-                </a>
-            </li>
-        </ul>
-
-        <!-- CCS paper -->
-        <p>Our nonlinear dynamical systems article about estimating dynamic coupling in the brain is out in Scientific Reports:</p>
-
-        <ul>
-            <li>
-                <a href="ConvergentCrossSorting_BrestonLeonardisetal2021.pdf">
-                    Breston, L., Leonardis, E. J., Quinn, L. K., et al. (2021). Convergent cross sorting for estimating dynamic coupling. Scientific Reports.
-                </a>
-            </li>
-        </ul>
-
-        <!-- Public communication -->
-        <p>
-            I actively educate popular audiences about the role of science and technology in society.
-            I am a recurring guest at KPBS Cinema Junkie Podcast and events with the SD Natural History Museum.
-            I was a panelist at the Horrible Imaginings Film Festival discussing the science behind science fiction.
-        </p>
-
-        <!-- PiRat -->
-        <p>
-            Check out this video of our rat-robot interaction project in collaboration with Janet Wiles' CIS Lab at UQ:
-        </p>
-
-        <ul>
-            <li>
-                <a href="PiRatHeathLeonardis2018.pdf">
-                    Heath, S. et al. (2018). PiRat: An autonomous framework for studying social behavior in rats and robots. IROS 2018.
-                </a>
-            </li>
-        </ul>
-
-        <iframe width="820" height="515"
-                src="https://www.youtube.com/embed/uzqJsvfEnr4"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-        </iframe>
-    </div>
-
-    <footer>
-        <ul>
-            <li><a href="mailto:leonardiseric@gmail.com">email</a></li>
-            <li><a href="https://github.com/ericleonardis">github.com/ericleonardis</a></li>
-        </ul>
-    </footer>
+  <footer>
+    <a href="mailto:leonardiseric@gmail.com">leonardiseric@gmail.com</a>
+    <a href="https://github.com/ericleonardis" target="_blank" rel="noopener">github.com/ericleonardis</a>
+  </footer>
 
 </body>
 </html>
