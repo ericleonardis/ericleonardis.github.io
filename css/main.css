@@ -353,6 +353,12 @@ nav {
   color: #444;
 }
 
+.pub-figure {
+  width: 240px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
 /* 13. Flyer Grid
    ---------------------------------------------------------- */
 .flyer-grid {
@@ -461,6 +467,15 @@ footer a:hover {
     font-size: 28px;
   }
 
+  .page-header {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .page-header img {
+    width: 100% !important;
+  }
+
   .card-grid {
     grid-template-columns: 1fr;
   }
@@ -470,7 +485,15 @@ footer a:hover {
   }
 
   .featured-img {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .pub-item div[style*="display:flex"] {
+    flex-direction: column !important;
+  }
+
+  .pub-figure {
+    width: 100% !important;
   }
 
   .doc-cards {
