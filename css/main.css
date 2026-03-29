@@ -164,10 +164,11 @@ nav {
    ---------------------------------------------------------- */
 .tag {
   display: inline-block;
-  font-size: 9px;
-  letter-spacing: 2px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .tag-research { color: #2563eb; }
