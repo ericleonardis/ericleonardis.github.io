@@ -41,14 +41,13 @@ img {
 /* 4. Nav
    ---------------------------------------------------------- */
 nav {
-  border-bottom: 1px solid #e8e8e8;
-}
-
-.nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 48px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+  position: relative;
 }
 
 .nav-logo {
@@ -224,6 +223,11 @@ nav {
   gap: 28px;
   align-items: flex-start;
   transition: border-color 0.15s;
+  margin-bottom: 20px;
+}
+
+.featured-card:last-child {
+  margin-bottom: 0;
 }
 
 .featured-card:hover {
@@ -376,35 +380,34 @@ nav {
 /* 15. Footer
    ---------------------------------------------------------- */
 footer {
-  padding: 32px 0;
+  padding: 32px 48px;
   border-top: 1px solid #e8e8e8;
   margin-top: 40px;
-}
-
-.footer-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 11px;
   color: #999;
+  max-width: 1196px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-inner a {
+footer a {
   color: #666;
   transition: color 0.15s;
 }
 
-.footer-inner a:hover {
+footer a:hover {
   color: #1a1a1a;
 }
 
 /* 16. Responsive — max-width 768px
    ---------------------------------------------------------- */
 @media (max-width: 768px) {
-  .nav-inner {
+  nav {
     padding: 20px 24px;
     flex-wrap: wrap;
-    position: relative;
   }
 
   .nav-links {
@@ -451,9 +454,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .footer-inner {
+  footer {
     flex-direction: column;
     gap: 12px;
     text-align: center;
+    padding: 32px 24px;
   }
 }

@@ -10,7 +10,7 @@
 
   <nav>
     <a class="nav-logo" href="/">Eric Leonardis</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/research.html">Research</a></li>
@@ -25,44 +25,46 @@
   <div class="page-wrap">
 
     <!-- Page Header -->
-    <section class="hero">
+    <div class="page-header">
       <h1>Film</h1>
       <p class="subtitle">Exploring AI, neuroscience, and storytelling through panels, consulting, and media. Scientific advisor for the National Academy of Sciences Science &amp; Entertainment Exchange.</p>
-    </section>
+    </div>
 
     <hr class="divider">
 
     <!-- Featured -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Featured</p>
       <div class="featured-card">
         <div class="featured-img">
           <img src="/comicconpic.jpg" alt="Eric Leonardis at Comic-Con">
         </div>
-        <span class="tag tag-film">Comic-Con International</span>
-        <h3>Evolution of AI in Film and In Reality</h3>
-        <p>I spoke at Comic-Con International on the &#8220;Evolution of AI in Film and In Reality&#8221; panel, sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI influences storytelling, scientific communication, and ethics. The room was packed, and I&#8217;m grateful to Andrea Decker for organizing the event.</p>
-        <p class="pub-meta">San Diego, CA</p>
+        <div>
+          <span class="tag tag-film">Comic-Con International</span>
+          <h3>Evolution of AI in Film and In Reality</h3>
+          <p>I spoke at Comic-Con International on the "Evolution of AI in Film and In Reality" panel, sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI influences storytelling, scientific communication, and ethics. The room was packed, and I'm grateful to Andrea Decker for organizing the event.</p>
+          <div class="meta">San Diego, CA</div>
+        </div>
       </div>
     </section>
 
     <hr class="divider">
 
     <!-- Events & Panels -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Events &amp; Panels</p>
       <ul class="pub-list">
         <li class="pub-item">
           <span class="pub-title">Body Horror and the Brain</span>
-          <span class="pub-meta">Neurohumanities Network / Harvard Medical School, 2024</span>
+          <span class="pub-venue">Neurohumanities Network / Harvard Medical School, 2024</span>
         </li>
         <li class="pub-item">
           <span class="pub-title">The Science Behind Science Fiction</span>
-          <span class="pub-meta">Horrible Imaginings Film Festival</span>
+          <span class="pub-venue">Horrible Imaginings Film Festival</span>
         </li>
         <li class="pub-item">
           <span class="pub-title">Science and Entertainment Exchange — Film Script Advising</span>
-          <span class="pub-meta">National Academy of Sciences</span>
+          <span class="pub-venue">National Academy of Sciences</span>
         </li>
       </ul>
     </section>
@@ -70,12 +72,12 @@
     <hr class="divider">
 
     <!-- Media -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Media</p>
       <ul class="pub-list">
         <li class="pub-item">
           <span class="pub-title"><a href="https://www.kpbs.org/" target="_blank" rel="noopener">KPBS Cinema Junkie Podcast</a></span>
-          <span class="pub-meta">Recurring Guest</span>
+          <span class="pub-venue">Recurring Guest</span>
         </li>
       </ul>
     </section>
@@ -86,6 +88,12 @@
     <a href="mailto:leonardiseric@gmail.com">leonardiseric@gmail.com</a>
     <a href="https://github.com/ericleonardis" target="_blank" rel="noopener">github.com/ericleonardis</a>
   </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>

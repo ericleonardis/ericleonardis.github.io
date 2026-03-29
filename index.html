@@ -10,7 +10,7 @@
 
   <nav>
     <a class="nav-logo" href="/">Eric Leonardis</a>
-    <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="/" class="active">Home</a></li>
       <li><a href="/research.html">Research</a></li>
@@ -33,7 +33,7 @@
     <hr class="divider">
 
     <!-- Research -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Research</p>
       <div class="card-grid">
 
@@ -63,7 +63,7 @@
     <hr class="divider">
 
     <!-- Documents -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Documents</p>
       <div class="doc-cards">
 
@@ -85,7 +85,7 @@
     <hr class="divider">
 
     <!-- Science Communication -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Science Communication</p>
       <div class="card-grid">
 
@@ -107,15 +107,17 @@
     <hr class="divider">
 
     <!-- Film -->
-    <section class="content-section">
+    <section class="section">
       <p class="section-label">Film</p>
       <a class="featured-card" href="/film.html">
         <div class="featured-img">
           <img src="/comicconpic.jpg" alt="Eric Leonardis at Comic-Con">
         </div>
-        <span class="tag tag-film">Comic-Con International</span>
-        <h3>Evolution of AI in Film and In Reality</h3>
-        <p>I spoke at Comic-Con International on the "Evolution of AI in Film and In Reality" panel, sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI influences storytelling, scientific communication, and ethics.</p>
+        <div>
+          <span class="tag tag-film">Comic-Con International</span>
+          <h3>Evolution of AI in Film and In Reality</h3>
+          <p>I spoke at Comic-Con International on the "Evolution of AI in Film and In Reality" panel, sharing my work at the intersection of AI, neuroscience, and media. I discussed how modern AI influences storytelling, scientific communication, and ethics.</p>
+        </div>
       </a>
     </section>
 
@@ -125,6 +127,12 @@
     <a href="mailto:leonardiseric@gmail.com">leonardiseric@gmail.com</a>
     <a href="https://github.com/ericleonardis" target="_blank" rel="noopener">github.com/ericleonardis</a>
   </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
