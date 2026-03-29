@@ -192,6 +192,17 @@ nav {
   border-color: #ccc;
 }
 
+.card .card-img {
+  margin: -24px -24px 16px -24px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+}
+
+.card .card-img img {
+  width: 100%;
+  display: block;
+}
+
 .card h3 {
   font-size: 15px;
   font-weight: 500;
