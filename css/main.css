@@ -511,3 +511,8 @@ footer a:hover {
     padding: 32px 24px;
   }
 }
+
+.card .card-img video {
+  width: 100%;
+  display: block;
+}
