@@ -143,6 +143,32 @@ nav {
   line-height: 1.6;
 }
 
+.hero .hero-headline {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1a1a1a;
+  max-width: 620px;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+.hero .hero-bullets {
+  font-size: 16px;
+  color: #444;
+  max-width: 620px;
+  line-height: 1.55;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.hero .hero-bullets li {
+  margin-bottom: 8px;
+}
+
+.hero .hero-bullets li::marker {
+  color: #2563eb;
+}
+
 /* 7. Page Header (subpages)
    ---------------------------------------------------------- */
 .page-header {
